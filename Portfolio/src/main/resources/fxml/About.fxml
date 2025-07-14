@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox alignment="TOP_LEFT" spacing="20" styleClass="about-box" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <padding><Insets bottom="30" left="30" right="30" top="30" /></padding>
+
+    <Label styleClass="title" text="About Me" />
+   <TextFlow prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="I am a car enthusiast who is currently taking up BS-Computer Engineering. I also play tennis as a hobby and also, do event coverages for the school.">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Text>
+      </children>
+   </TextFlow>
+
+    <HBox spacing="20">
+        <VBox styleClass="info-box">
+            <Label styleClass="info-num" text="20+" />
+            <Label styleClass="info-label" text="Projects Completed" />
+        </VBox>
+        <VBox styleClass="info-box">
+            <Label styleClass="info-num" text="1" />
+            <Label styleClass="info-label" text="Year Experience" />
+        </VBox>
+        <VBox styleClass="info-box">
+            <Label styleClass="info-num" text="3" />
+            <Label styleClass="info-label" text="Happy Professors" />
+        </VBox>
+    </HBox>
+</VBox>

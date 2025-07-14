@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_LEFT" spacing="20" styleClass="about-box" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <padding><Insets bottom="30" left="30" right="30" top="30" /></padding>
+   <Separator prefWidth="200.0" />
+
+    <Label styleClass="title" text="Contact Me:" />
+   <TextArea prefHeight="0.0" prefWidth="628.0" promptText="Name" />
+   <TextArea prefHeight="0.0" prefWidth="628.0" promptText="E-Mail" />
+   <Separator prefWidth="200.0" />
+
+    <HBox spacing="20" />
+   <TextArea prefHeight="201.0" prefWidth="628.0" promptText="Message" />
+   <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="117.0" stylesheets="@../Style.css" text="Send Message">
+      <styleClass>
+         <String fx:value="nav-btn" />
+         <String fx:value="project-button" />
+      </styleClass>
+   </Button>
+   <Separator prefWidth="200.0" />
+</VBox>

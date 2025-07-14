@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox alignment="TOP_LEFT" spacing="20" styleClass="about-box" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ph.edu.dlsu.lbycpei.portfolio.Controller.FeaturedProjectsController">
+    <padding><Insets bottom="30" left="30" right="30" top="30" /></padding>
+   <Separator prefWidth="200.0" />
+
+    <Label styleClass="title" text="Featured Projects" />
+   <TextFlow prefHeight="0.0" prefWidth="306.0">
+      <children>
+         <Label stylesheets="@../Style.css" text="Here are some of my featured Projects:" />
+      </children>
+   </TextFlow>
+   <Hyperlink fx:id="calcButton" onAction="#openFormula" styleClass="project-button" stylesheets="@../Style.css" text="Formula Calculator App" />
+   <TextFlow prefHeight="0.0" prefWidth="306.0" stylesheets="@../Style.css">
+      <children>
+         <Label prefHeight="55.0" prefWidth="295.0" text="This calculator App calculates the missing values of the Ideal Gas Law equation along with the 3-Phase electrical system power equation." wrapText="true" />
+      </children>
+   </TextFlow>
+   <Hyperlink fx:id="hngButton" onAction="#openHangman" styleClass="project-button" stylesheets="@../Style.css" text="Hangman App" />
+   <TextFlow prefHeight="0.0" prefWidth="306.0" stylesheets="@../Style.css">
+      <children>
+         <Label prefHeight="38.0" prefWidth="310.0" text="This app is a simple Hangman game where the user has to guess the right word before the hangman is completed." wrapText="true" />
+      </children>
+   </TextFlow>
+   <Separator prefWidth="200.0" />
+</VBox>
